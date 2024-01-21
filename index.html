@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaCalculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+    <h1>Tea Calculator</h1>
+    
+<div id="fields">
+    <label for="cupsPerDay">Enter cups per day:</label>
+    <input type="number" id="cupsPerDay" placeholder="Cups per day" />
+
+    <label for="calculationType">Choose calculation type:</label>
+    <select id="calculationType" onchange="toggleDurationFields()">
+        <option value="days">Calculate for number of days</option>
+        <option value="years">Calculate for number of years</option>
+    </select>
+</div>
+    <div id="duration-fields">
+        <label for="duration">Enter duration:</label>
+        <input type="number" id="duration" placeholder="Duration" />
+    </div>
+
+    <button onclick="calculateTea()">Calculate</button>
+
+    <div id="tea-message"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
