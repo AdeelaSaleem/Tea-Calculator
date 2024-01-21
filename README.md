@@ -1,5 +1,4 @@
 
-
 # Tea Calculator
 
 The Tea Calculator is a simple web application that helps tea enthusiasts determine the amount of tea they'll need based on their daily 
